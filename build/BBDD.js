@@ -3,9 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose = require('mongoose');
 //require('dotenv').config()
 //------------------------------ conexion a una BBDD -----------------------------
-const usuario = "haguilertsBBDD";
-const password = "121qseAWD123";
-const dbName = "JuegosDDBB";
 const uri = `mongodb+srv://${process.env.USUARIO}:${process.env.PASSWORD}@mongodb.ho3r0.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 //mongodb+srv://haguilertsBBDD:<password>@mongodb.ho3r0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })

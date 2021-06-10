@@ -9,7 +9,7 @@ metodo de instalacion:
    usamos en la el archivo de la BBDD => require('dotenv').config() 
    luego creamos un archivo .env => hay se guardara los datos de nuetra BBDD de manera privada 
    finalmente en .gitignore agrego .env 
-
+BBDD: https://cloud.mongodb.com/v2/60c1347aa941c041c424b5a4#metrics/replicaSet/60c17e15851a723a39f7349c/explorer/JuegosDDBB/juegosGamer/find
 
 */
 motores de plantilla para nodejs:
