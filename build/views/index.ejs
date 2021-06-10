@@ -1,0 +1,31 @@
+<%- include("template/cabesera",{titulo:"Pag inicio"}) %>
+    <%- include("template/nav") %>
+
+        <h1>pagina principal</h1>
+        <p>Bienvenido, como estas!! </p>
+        <ul>
+            <%name.forEach((user)=>{                
+                %>
+                <li>
+                    <strong>
+                    <%= user.id %>
+                </strong>
+                    <strong class="blue">
+                    <%= user.name %>
+                </strong>
+                    <strong class="red">
+                    <%= user.surname %>
+                </strong>
+                    <strong class="yellow">
+                    <%= user.age %>
+                </strong>
+                    <strong class="green">
+                    <%= user.sexo %>
+                </strong>
+                </li>
+
+                <% })%>
+        </ul>
+        </body>
+
+        </html>

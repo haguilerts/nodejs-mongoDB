@@ -1,0 +1,48 @@
+<%- include("template/cabesera",{titulo:"Pag inicio"}) %>
+    <%- include("template/nav") %>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Presio</th>
+                        <th scope="col">imgen</th>
+                        <th scope="col">opcion</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <% admin.forEach(e => { %>
+                        <tr>
+                            <th scope="row">
+                                <%= e.id %>
+                            </th>
+                            <td>
+                                <%= e.name %>
+                            </td>
+                            <td>
+                                <%= e.descripcion %>
+                            </td>
+                            <td>$
+                                <%= e.presio %>
+                            </td>
+                            <td class="imgtable" style="max-width: 60px;max-height: 60px;">
+                                <img src="<%=e.img%> " class="card-img-top" alt="...">
+                            </td>
+                            <td>
+                                <button class="btn btn-primary">update</button>
+                                <button class="btn btn-danger">Delite</button>
+                            </td>
+                        </tr>
+                        <% }) %>
+
+
+                </tbody>
+            </table>
+        </section>
+
+        </body>
+
+        </html>
